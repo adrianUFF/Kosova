@@ -1,4 +1,4 @@
-mport socket
+import socket
 from threading import Thread
 dentrodafuncao=False
 def cadastrodousuario(s):	# Registra o usuario no servidor
@@ -47,7 +47,7 @@ def menu(s):
 
 
 HOST = '127.0.0.1'    # The remote host
-PORT = 60011           # The same port as used by the server
+PORT = 60012           # The same port as used by the server
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) #IPv4,tipo de socket
 s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
 s.connect((HOST, PORT))  #Abre uma conexao com IP e porta especificados
